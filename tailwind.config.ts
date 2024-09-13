@@ -8,9 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      flex:{
+        '2':'2 2 0%',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        manual_gray:"#eef0f2"
       },
     },
   },
