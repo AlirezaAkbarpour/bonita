@@ -12,7 +12,7 @@ export default function ListItem() {
                              className="w-12 h-12 rounded-full mx-2 shadow-lg"
                         />
                         <div className="px-2">
-                          <div className="text-base text-black font-bold">lizzie Alexandra</div>
+                          <div className="text-base text-black font-medium">lizzie Alexandra</div>
                           <div className="text-sm text-gray-400 font-normal">oncology</div>
                         </div>
                       </div>
