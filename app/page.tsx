@@ -1,3 +1,4 @@
+import AnalysisComponent from "@/components/analyses";
 import Bonita from "@/components/bonita";
 import DoctorListComponent from "@/components/doctorListComponent";
 import Add from "@mui/icons-material/Add";
@@ -63,6 +64,9 @@ export default function Home() {
                         </div>
                 </div>
               </div>
+         </section>
+         <section className="mt-10">
+                <AnalysisComponent/>
          </section>
       </article>
       <aside className="w-1/4 max-md:flex-auto mx-2 bg-blue-800">
