@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       flex:{
         '2':'2 2 0%',
+        '2/3':'2/3 1 0%'
       },
       colors: {
         background: "var(--background)",
