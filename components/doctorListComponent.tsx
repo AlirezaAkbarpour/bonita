@@ -4,7 +4,7 @@ import ListItem from "./ListItem";
 
 export default function DoctorListComponent() {
   return (
-    <div className="w-full h-96 bg-manual_gray px-1 py-2 mx-3 rounded-lg overflow-hidden">
+    <div className="w-full h-96 bg-manual_gray px-1 py-1 mx-3 rounded-lg overflow-hidden">
         <div className="flex flex-row w-full px-4 h-16 items-center justify-between">
             <div className="text-black text-lg font-semibold">Your Doctor</div>
             <div className="text-blue-600 text-sm font-semibold">
@@ -19,7 +19,7 @@ export default function DoctorListComponent() {
             </input>
           </div> 
         </div>
-        <div className="w-full h-86 ">
+        <div className="w-auto h-86 px-6 py-1">
           <ListItem/>  
           <ListItem/>
           <ListItem/>  
