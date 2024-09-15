@@ -3,6 +3,7 @@ import Bonita from "@/components/bonita";
 import DoctorListComponent from "@/components/doctorListComponent";
 import Add from "@mui/icons-material/Add";
 import Image from "next/image";
+import Performance from "@/components/Performance";
 
 export default function Home() {
   return (
@@ -67,6 +68,9 @@ export default function Home() {
          </section>
          <section className="mt-10">
                 <AnalysisComponent/>
+         </section>
+         <section className="mt-10">
+            <Performance/>
          </section>
       </article>
       <aside className="w-1/4 max-md:flex-auto mx-2 bg-blue-800">
