@@ -1,5 +1,5 @@
-import AnalysisChart from "./analysisChart"
-
+import dynamic from "next/dynamic"
+const AnalysisChart = dynamic(()=>import('./analysisChart'),{ssr:false})
 export default async function AnalysisComponent()  {
   return (
     <div className='w-full bg-manual_gray mt-4 p-4 rounded-lg'>

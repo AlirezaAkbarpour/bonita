@@ -1,9 +1,9 @@
 'use client'
-import React, { Component } from "react";
+import React from "react";
 import Chart from "react-apexcharts";
 
-export default class ApexChart extends Component {
-    constructor(props: any) {
+export default class ApexChart extends React.Component {
+    constructor(props: object) {
       super(props);
 
       this.state = {
@@ -61,7 +61,9 @@ export default class ApexChart extends Component {
       return (
         <div className="w-full ">
           <div id="chart" className="w-full">
+            {(typeof window !== 'undefined')&&
             <Chart options={this.state.options} series={this.state.series} type="area" height={300} />
+            }
           </div>
           <div id="html-dist"></div>
         </div>
