@@ -25,7 +25,9 @@ export default function Home() {
          <section className="bg-manual_gray w-full rounded-lg px-5 py-3">
               <div className="flex justify-between p-4">
                 <div className="text-zinc-800 p-1 mb-2 text-lg font-medium">Research</div>
-                <div className="text-blue-800 p-1 mt-2 font-semibold text-base flex justify-center"><Add className="mx-1"  fontSize="medium"/>Add Research</div>
+                <div className="text-blue-800 p-1 mt-2 rounded-full 
+                font-semibold hover:cursor-pointer hover:ring hover:bg-blue-200 transition-all
+                text-base flex justify-center items-center"><Add className="mx-1"  fontSize="medium"/>Add Research</div>
               </div>
               <div className="grid grid-cols-2 gap-4 ">
                 <div className="w-full h-52 bg-white rounded-2xl py-2 mr-2">

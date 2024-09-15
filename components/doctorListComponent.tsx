@@ -7,7 +7,7 @@ export default function DoctorListComponent() {
     <div className="w-80 bg-manual_gray px-1 py-1 mx-3 rounded-lg overflow-hidden">
         <div className="flex flex-row w-full px-4 h-16 items-center justify-between">
             <div className="text-black text-lg font-semibold">Your Doctor</div>
-            <div className="text-blue-600 text-sm font-semibold">
+            <div className="text-blue-600 py-1 px-2  text-sm rounded-full hover:cursor-pointer font-semibold hover:ring hover:bg-blue-200 transition-all">
                 <Link href=''>See all</Link>
             </div>
         </div>
