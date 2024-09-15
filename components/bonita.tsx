@@ -1,7 +1,7 @@
 export default function Bonita() {
   return (
     <>
-        <div className="w-80 h-96 mx-2 my-8 rounded-lg flex justify-center items-center
+        <div className="w-80 h-96 mx-3 my-8 rounded-lg flex justify-center items-center
          bg-gradient-to-t from-purple-800 to-blue-800">
             <span className="text-4xl z-50 absolute font-bold">Bonita</span>
             <svg height="386" width="320" xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,10 @@
 'use client'
+
+import AnalysisChart from "./analysisChart"
+
 export default function AnalysisComponent()  {
   return (
-    <div className='w-full h-64 bg-manual_gray p-4 rounded-lg'>
+    <div className='w-full bg-manual_gray mt-4 p-4 rounded-lg'>
         <div className='w-full flex justify-between'>
             <div className='text-black text-xl font-medium'>Total Analysis</div>
             <div className='text-black text-lg font-normal px-2 flex items-center justify-start'>
@@ -16,8 +19,8 @@ export default function AnalysisComponent()  {
                 
             </div>
         </div>
-        <div>
-       
+        <div className="w-full">
+            <AnalysisChart/>
         </div>
     </div>
   )
