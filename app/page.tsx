@@ -4,6 +4,7 @@ import DoctorListComponent from "@/components/doctorListComponent";
 import Add from "@mui/icons-material/Add";
 import Image from "next/image";
 import Performance from "@/components/Performance";
+import DoctorAd from "@/components/DoctorAd";
 
 export default function Home() {
   return (
@@ -75,7 +76,9 @@ export default function Home() {
             <Performance/>
          </section>
       </article>
-      <aside className="w-1/4 max-md:flex-auto mx-2 bg-blue-800">
+      <aside className="w-1/4 max-md:flex-auto justify-center mx-2 ">
+                  <DoctorAd/>
+
       </aside>
     </main>
   );
