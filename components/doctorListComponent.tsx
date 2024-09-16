@@ -13,9 +13,10 @@ export default function DoctorListComponent() {
         </div>
         <div className="w-full flex justify-center ">
           <div className="w-72 mx-5 h-12 px-1 bg-white 
-            rounded-2xl flex justify-between items-center border border-gray-200">
+            rounded-2xl flex justify-between items-center border border-gray-200
+            ">
             <SearchIcon/>
-            <input className="w-64 mx-2 focus:outline-none focus:ring-0 text-gray-600" placeholder="Search">
+            <input className="w-64 mx-2 focus:outline-none text-gray-600" placeholder="Search">
             </input>
           </div> 
         </div>

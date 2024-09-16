@@ -17,8 +17,8 @@ const config: Config = {
         foreground: "var(--foreground)",
         manual_gray:"#eef0f2"
       },
-      backgroundImage:{
-        'doctor-pattern': "url('/statics/images/doctor.png')"
+      height:{
+        '114':'40%'
       }
     },
   },
