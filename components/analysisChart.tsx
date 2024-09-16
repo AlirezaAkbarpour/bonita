@@ -10,12 +10,12 @@ export default class ApexChart extends React.Component {
         series: [{
           name: 'normal',
           color:'#00ff00',
-          type:'line',
+          type:'area',
           data: [15, 20, 17, 25]
         },{
             name: 'Your',
-            type:'area',
-            color:'#bbbfff',
+            type:'line',
+            color:'#000',
             zIndex:'1',
             data: [20, 28, 28, 17]
           }],
