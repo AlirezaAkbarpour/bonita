@@ -1,16 +1,22 @@
 import { ArrowUpward } from '@mui/icons-material'
 import { CircularProgress } from '@mui/material'
 import React from 'react'
+import { dataType } from './Performance'
 
-export default function PerformanceItem() {
+export default function PerformanceItem({id,name,value,date,increase}:dataType) {
+  const getSeason = (d :Date) => Math.floor((d.getMonth() / 12 * 4)) % 4
+  const Seasons : string[] = ["Winter","Spring","Summer","Autumn"]
+  const currentSeason :string = Seasons[getSeason(date)]
   return (
-    <div className='w-full h-16 bg-white rounded-lg flex justify-between items-center my-4 px-3 text-black'>
-            <div className='text-lg font-medium'>Hart</div>
-            <div className='flex items-center text-base font-medium'><CircularProgress size={48} color='info'  sx={{margin:.5,padding:0.5}} variant='determinate'  value={86}/> 86% </div>
-            <div className='text-black text-base font-normal flex justify-between'>Summer <div className='text-gray-400 mx-2'>7-8-2023</div> </div>
+    <li key={id} className='w-full h-16 bg-white rounded-lg flex justify-between items-center my-4 px-3 text-black'>
+            <div className='text-lg font-medium'>{name}</div>
+            <div className='flex items-center text-base font-medium'><CircularProgress size={48} color='info'  
+            sx={{margin:.5,padding:0.5}} variant='determinate'  value={value}/> {value}% </div>
+            <div className='text-black text-base font-normal flex justify-between'>
+              {currentSeason} <div className='text-gray-400 mx-2'>{date.toISOString().slice(0,10).toString()}</div> </div>
             <div className='bg-yellow-200 px-2 py-1 rounded-full
              text-black font-medium flex 
-             justify-center items-center'><ArrowUpward className=''/>3% </div>
-    </div>
+             justify-center items-center'><ArrowUpward className=''/>{increase}% </div>
+    </li>
   )
 }

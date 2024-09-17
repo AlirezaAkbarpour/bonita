@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function DoctorAd() {
   return (
-    <div className="w-full h-114 bg-gradient-to-b from-manual_gray to-gray-400 
+    <div className="w-full h-[28rem] bg-gradient-to-b from-manual_gray to-gray-400 
                     shadow-lg rounded-lg px-4 py-4 ">
             <div className="w-full z-50 relative">
                 <div className="text-lg text-gray-400 font-medium py-2">Psychologist</div>

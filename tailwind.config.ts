@@ -18,7 +18,7 @@ const config: Config = {
         manual_gray:"#eef0f2"
       },
       height:{
-        '114':'40%'
+        '114':'44%'
       }
     },
   },
