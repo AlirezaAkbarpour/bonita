@@ -5,6 +5,7 @@ import Add from "@mui/icons-material/Add";
 import Image from "next/image";
 import Performance from "@/components/Performance";
 import DoctorAd from "@/components/DoctorAd";
+import ComplexOfResearch from "@/components/complexResearch";
 
 export default function Home() {
   return (
@@ -78,7 +79,7 @@ export default function Home() {
       </article>
       <aside className="w-1/4 max-md:flex-auto justify-center mx-2 ">
                   <DoctorAd/>
-
+                  <ComplexOfResearch/>
       </aside>
     </main>
   );

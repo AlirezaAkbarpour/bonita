@@ -16,8 +16,8 @@ export default function PerformanceItem({id,name,value,date,increase}:dataType) 
             </div>
             
             <div className='w-1/2 flex justify-end'>
-              <div className='text-black text-base font-normal px-1 flex justify-between w-1/2 mr-24'>
-                {currentSeason} <div className='text-gray-400 mx-2'>{date.toISOString().slice(0,10).toString()}</div> </div>
+              <div className='text-black text-base font-normal px-1 flex justify-between w-1/2 mr-24'> {currentSeason} 
+              <div className='text-gray-400 mx-2'>{date.toISOString().slice(0,10).toString()}</div> </div>
               <div className='bg-yellow-200 px-2 py-1 rounded-full
               text-black font-medium flex 
               justify-center items-center'><ArrowUpward className=''/>{increase}% </div>
