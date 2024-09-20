@@ -9,7 +9,7 @@ import ComplexOfResearch from "@/components/complexResearch";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen bg-gray-400 flex px-2 py-4 max-md:flex-col max-md:h-full">
+    <main className="w-full min-h-screen bg-gray-400 flex justify-center px-2 py-4 max-md:flex-col max-md:h-full">
       <aside className="w-auto max-md:flex-auto mx-2 flex flex-col">
         <DoctorListComponent/>
         <div className="w-80 h-20 bg-zinc-900 mx-3 rounded-lg flex justify-center items-center px-8">
@@ -77,7 +77,7 @@ export default function Home() {
             <Performance/>
          </section>
       </article>
-      <aside className="w-1/4 max-md:flex-auto justify-center mx-2 ">
+      <aside className="w-80 max-md:flex-auto justify-end mx-4 ">
                   <DoctorAd/>
                   <ComplexOfResearch/>
       </aside>

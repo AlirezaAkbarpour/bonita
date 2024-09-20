@@ -16,7 +16,7 @@ export default function ListItem() {
                           <div className="text-sm text-gray-400 font-normal">oncology</div>
                         </div>
                       </div>
-                      <div className="w-6 h-6 mr-6  rounded-full flex items-start transition-all hover:ring hover:ring-gray-400
+                      <div className="w-6 h-6 mr-2  rounded-full flex items-start transition-all hover:ring hover:ring-gray-400
                               hover:bg-gray-200
                       ">
                         <MoreHoriz sx={{color:"gray",":hover":{color:"black",cursor:'pointer'}}}/>

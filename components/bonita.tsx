@@ -14,7 +14,7 @@ export default function Bonita() {
                  <line x1="6.75118" y1="329.566" x2="318.751" y2="150.566" stroke="gray"/>
                  <circle cx="132" cy="257" r="16" fill="white"/>
                  <circle cx="179" cy="75" r="16" fill="white"/>
-                 <circle cx="147" cy="20" r="4" fill="white"/>
+                 <circle cx="146" cy="20" r="4" fill="white"/>
                  <circle cx="294" cy="164" r="3" fill="white"/>
                  <circle cx="40" cy="311" r="3" fill="white"/>
               </svg>

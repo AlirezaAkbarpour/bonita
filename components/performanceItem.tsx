@@ -8,7 +8,9 @@ export default function PerformanceItem({id,name,value,date,increase}:dataType) 
   const Seasons : string[] = ["Winter","Spring","Summer","Autumn"]
   const currentSeason :string = Seasons[getSeason(date)]
   return (
-    <li key={id} className='w-full h-16  bg-white rounded-lg flex justify-between items-center my-4 px-3 text-black'>
+    <li key={id} className='w-full h-16  bg-white rounded-lg flex 
+    justify-between items-center my-4 px-3 text-black hover:ring 
+    hover:ring-gray-600 transition-all hover:bg-gray-200 hover:cursor-pointer'>
             <div className='w-1/2 flex justify-start items-center'>
               <div className='text-lg font-medium w-1/2'>{name}</div>
               <div className='flex items-center text-base font-medium text-center'><CircularProgress size={48} color='info'  
