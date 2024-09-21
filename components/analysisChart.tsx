@@ -1,8 +1,15 @@
 'use client'
+import { ApexOptions } from "apexcharts";
 import React from "react";
-import Chart from "react-apexcharts";
+import ReactApexChart from "react-apexcharts";
 
-export default class ApexChart extends React.Component {
+
+interface State {
+  series: ApexAxisChartSeries;
+  options: ApexOptions;
+}
+
+export default class ApexChart extends React.Component<object,State> {
     constructor(props: object) {
       super(props);
 
@@ -15,8 +22,8 @@ export default class ApexChart extends React.Component {
         },{
             name: 'Your',
             type:'line',
-            color:'#000',
-            zIndex:'1',
+            color:'#00f',
+            zIndex:1,
             data: [20, 28, 28, 17]
           }],
         options: {
@@ -52,9 +59,9 @@ export default class ApexChart extends React.Component {
               format: 'dd/MM/yy HH:mm'
             },
           },
-          colors:['#2E93fA', '#66DA26',]
+          colors:['#2E93fA', '#66DA26']
         },
-      };
+      }
     }
 
     render() {
@@ -62,7 +69,7 @@ export default class ApexChart extends React.Component {
         <div className="w-full ">
           <div id="chart" className="w-full">
             {(typeof window !== 'undefined')&&
-            <Chart options={this.state.options} series={this.state.series} type="area" height={300} />
+            <ReactApexChart options={this.state.options} series={this.state.series} type="area" height={300} />
             }
           </div>
           <div id="html-dist"></div>
